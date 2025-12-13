@@ -1,0 +1,14 @@
+server:
+  port: 8082 # On change encore de port
+
+spring:
+  application:
+    name: skypay
+  cloud:
+    config:
+      enabled: false
+  liquibase:
+    enabled: false
+  eureka:
+    client:
+      enabled: false
