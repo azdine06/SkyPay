@@ -6,7 +6,7 @@ import com.skypay.util.StatementPrinter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.io.PrintStream;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,11 +19,6 @@ public class Account implements AccountService {
     private final Clock clock;
     private final StatementPrinter printer;
     private int balance = 0;
-
-//    public Account(Clock clock, PrintStream out) {
-//        this.clock   = Objects.requireNonNull(clock);
-//        this.printer = new StatementPrinter(Objects.requireNonNull(out));
-//    }
 
     @Override
     public void deposit(int amount) {
